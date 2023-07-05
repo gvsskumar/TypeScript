@@ -1,5 +1,5 @@
 // Union type support multiple like `number|string`
-function combined(input1:number|string,input2:number|string,resultConversion:string){
+function combined(input1:number|string,input2:number|string,resultConversion:'as-number'|'as-text'){
     let result;
     if(typeof input1==='number' && typeof input2==='number' || resultConversion==='as-number'){
         result = +input1 + +input2;
